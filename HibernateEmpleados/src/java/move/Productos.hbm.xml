@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-feb-2019 13:13:58 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="move.Productos" table="productos" catalog="movedb" optimistic-lock="version">
+        <id name="idProducto" type="java.lang.Integer">
+            <column name="IdProducto" />
+            <generator class="identity" />
+        </id>
+        <property name="nombreProducto" type="string">
+            <column name="NombreProducto" length="40" not-null="true" />
+        </property>
+        <property name="cantidadPorUnidad" type="string">
+            <column name="CantidadPorUnidad" length="20" />
+        </property>
+        <property name="precioUnidad" type="big_decimal">
+            <column name="PrecioUnidad" scale="4" />
+        </property>
+    </class>
+</hibernate-mapping>

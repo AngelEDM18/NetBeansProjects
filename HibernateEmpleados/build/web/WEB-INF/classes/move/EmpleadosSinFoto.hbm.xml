@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-feb-2019 13:13:58 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="move.EmpleadosSinFoto" table="empleados_sin_foto" catalog="movedb" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="Id" />
+            <generator class="identity" />
+        </id>
+        <property name="campo1" type="java.lang.Integer">
+            <column name="Campo1" />
+        </property>
+        <property name="campo2" type="string">
+            <column name="Campo2" />
+        </property>
+        <property name="campo3" type="string">
+            <column name="Campo3" />
+        </property>
+        <property name="campo4" type="string">
+            <column name="Campo4" />
+        </property>
+        <property name="campo5" type="string">
+            <column name="Campo5" />
+        </property>
+        <property name="campo6" type="timestamp">
+            <column name="Campo6" length="0" />
+        </property>
+        <property name="campo7" type="timestamp">
+            <column name="Campo7" length="0" />
+        </property>
+        <property name="campo10" type="string">
+            <column name="Campo10" />
+        </property>
+        <property name="campo8" type="string">
+            <column name="Campo8" />
+        </property>
+        <property name="campo9" type="string">
+            <column name="Campo9" />
+        </property>
+        <property name="campo11" type="string">
+            <column name="Campo11" />
+        </property>
+        <property name="campo12" type="string">
+            <column name="Campo12" />
+        </property>
+        <property name="campo13" type="string">
+            <column name="Campo13" />
+        </property>
+        <property name="campo14" type="string">
+            <column name="Campo14" />
+        </property>
+        <property name="campo15" type="string">
+            <column name="Campo15" />
+        </property>
+        <property name="campo16" type="string">
+            <column name="Campo16" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-feb-2019 13:13:58 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="move.Pedidos" table="pedidos" catalog="movedb" optimistic-lock="version">
+        <id name="idPedido" type="java.lang.Integer">
+            <column name="IdPedido" />
+            <generator class="identity" />
+        </id>
+        <property name="idCliente" type="string">
+            <column name="IdCliente" length="5" not-null="true" />
+        </property>
+        <property name="idEmpleado" type="java.lang.Integer">
+            <column name="IdEmpleado" />
+        </property>
+        <property name="fechaPedido" type="date">
+            <column name="FechaPedido" length="0" />
+        </property>
+        <property name="fechaEntrega" type="timestamp">
+            <column name="FechaEntrega" length="0" />
+        </property>
+        <property name="fechaEnvio" type="timestamp">
+            <column name="FechaEnvio" length="0" />
+        </property>
+        <property name="formaEnvio" type="java.lang.Integer">
+            <column name="FormaEnvio" />
+        </property>
+        <property name="cargo" type="big_decimal">
+            <column name="Cargo" scale="4" />
+        </property>
+        <property name="destinatario" type="string">
+            <column name="Destinatario" length="40" />
+        </property>
+        <property name="direccionDestinatario" type="string">
+            <column name="DireccionDestinatario" length="60" />
+        </property>
+        <property name="ciudadDestinatario" type="string">
+            <column name="CiudadDestinatario" length="15" />
+        </property>
+        <property name="regionDestinatario" type="string">
+            <column name="RegionDestinatario" length="15" />
+        </property>
+        <property name="codPostalDestinatario" type="string">
+            <column name="CodPostalDestinatario" length="10" />
+        </property>
+        <property name="paisDestinatario" type="string">
+            <column name="PaisDestinatario" length="15" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-feb-2019 13:13:58 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="move.DetallePedido" table="detalle_pedido" catalog="movedb" optimistic-lock="version">
+        <composite-id name="id" class="move.DetallePedidoId">
+            <key-property name="idPedido" type="int">
+                <column name="IdPedido" />
+            </key-property>
+            <key-property name="idProducto" type="int">
+                <column name="IdProducto" />
+            </key-property>
+        </composite-id>
+        <property name="precioUnidad" type="big_decimal">
+            <column name="PrecioUnidad" scale="4" not-null="true" />
+        </property>
+        <property name="cantidad" type="int">
+            <column name="Cantidad" not-null="true" />
+        </property>
+        <property name="descuento" type="float">
+            <column name="Descuento" precision="12" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

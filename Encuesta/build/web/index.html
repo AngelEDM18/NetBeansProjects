@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .rojo{color:red};
+        </style>
+    </head>
+    <body>
+        <h1 align="center">Encuesta privada</h1>
+        <h2>Rellena los datos indicados y pulsa Enviar</h2>
+        <form method="post" action="/Encuesta/validacion">
+            <table>
+                <tr>
+                    <td>Introduce tu nombre: </td>
+                    <td><input type="text" name="nombre" size="25"></td>
+                </tr>
+
+                <tr>
+                    <td>Introduce tus apellidos: </td>
+                    <td><input type="text" name="apellidos" size="25"></td>
+                </tr>
+
+                <tr>
+                    <td>Teclea tu numero de telefono: </td>
+                    <td><input type="text" name="tlf" maxlength="9"></td>
+                </tr>
+
+                <tr>
+                    <td>Indica tu ciudad de nacimiento: </td>
+                    <td><input type="text" name="ciudad" size="25"></td>
+                </tr>
+
+                <tr>
+                    <td>Sexo</td>
+                    <td><input type="radio" name="sexo" value="hombre">Hombre</td>              
+                    <td><input type="radio" name="sexo" value="mujer">Mujer</td>
+                </tr>
+
+                <tr>
+                    <td>Selecciona tu pais de origen</td>
+                    <td>
+                        <select name="pais">
+                            <option value="Espana" selected="selected">España</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Chile">Chile</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="rojo">Selecciona tus actividades de ocio favoritas</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="ocio" value="Parapente">Parapente<br>
+                        <input type="checkbox" name="ocio" value="Ala delta">Ala delta<br>
+                        <input type="checkbox" name="ocio" value="Submarinismo">Submarinismo<br>
+                        <input type="checkbox" name="ocio" value="Esqui">Esqui<br>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="rojo">Comentarios sobre la pagina</td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <textarea rows="4" cols="40" name="comentario"></textarea>
+                    </td>
+                </tr>
+
+            </table><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+    </body>
+</html>

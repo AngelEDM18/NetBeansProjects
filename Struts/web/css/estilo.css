@@ -1,0 +1,44 @@
+#contenedor {
+width:600px;
+margin-left:auto;
+margin-right:auto;
+}
+.campo {
+margin-top:10px;
+}
+#imagen {
+float:right;
+}
+.boton {
+margin: 10px 5px;
+background-color:#554444;
+color:#fff;
+width:100px;
+}
+#formulario {
+margin-top:60px;
+font-size:16px;
+}
+#errores {
+background-color:#e6dfd5;
+color:#424c56;
+}
+#errores ul li {
+list-style-image:url("../imagenes/flecha_derecha.png");
+}
+#errores ul {
+border-color:#f00;
+}
+h2 {
+text-align:center;
+}
+#pie {
+clear:both;
+height:30px;
+background-color:#424c56;
+}
+#pie p { text-align:right;
+font-size:14px;
+background-color:#e6dfd5;
+}
+

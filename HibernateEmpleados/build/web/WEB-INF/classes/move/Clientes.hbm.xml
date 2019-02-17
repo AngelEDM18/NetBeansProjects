@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-feb-2019 13:13:58 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="move.Clientes" table="clientes" catalog="movedb" optimistic-lock="version">
+        <id name="idCliente" type="string">
+            <column name="IdCliente" length="5" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="Nombre" length="40" not-null="true" />
+        </property>
+        <property name="nombreContacto" type="string">
+            <column name="NombreContacto" length="30" />
+        </property>
+        <property name="cargoContacto" type="string">
+            <column name="CargoContacto" length="30" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="Direccion" length="60" />
+        </property>
+        <property name="ciudad" type="string">
+            <column name="Ciudad" length="15" />
+        </property>
+        <property name="region" type="string">
+            <column name="Region" length="15" />
+        </property>
+        <property name="codPostal" type="string">
+            <column name="CodPostal" length="10" />
+        </property>
+        <property name="pais" type="string">
+            <column name="Pais" length="15" />
+        </property>
+        <property name="telefono" type="string">
+            <column name="Telefono" length="24" />
+        </property>
+        <property name="fax" type="string">
+            <column name="Fax" length="24" />
+        </property>
+    </class>
+</hibernate-mapping>
